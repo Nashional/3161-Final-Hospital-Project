@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC ".//w3c//dtd html 4.01 Transitional//EN" "http://www.w3.org/tr/html4/loose.dtd">
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<i class="fa fa-ambulance" style="font-size:48px;color:red"></i>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Video Game Database</title>
+<style type="text/css">
+.style1 {
+	font-family:Tahoma;
+	color: #2F4F4F;
+}
+.style2 { 
+	font-family: Tahoma;
+	font-weighr: bold;
+	color: #2F4F4F;
+}
+.style3{
+	font-family: Tahoma;
+	text-decoration: underline;
+	color: #2F4F4F;
+}
+</style>
+</head>
+<body background ="hospital2.jpg">
+
+<FORM action="/HospitalDatabase.oracleServelet" method="GET">
+<h1 class="style3"> PLACID MEMORIAL HOSPITAL </h1>
+	<br/>
+	<br/>
+	
+	<form action="/action_page.php">
+	<span class="style1">
+	Diagnosis: <input type="text" name="Diagnosis"><br>
+	Date Range: <input type="date" name="Date Range"><br>
+	<input type="submit" value="Submit">
+	<br><br></span></BR>
+	</form>
+	
+	
+	<span class="style2"><b>ALLERGIES</b></span><input type="checkbox" name="Allergies" value="Allergies"/>
+	<BR> <span class="style1"> Shows allergies of a specific patient<br><br></span></BR>
+
+	<span class="style2"><b>MEDICATION</span><input type="checkbox" name="Medication" value="Medication"/>
+	<BR> <span class="style1"> Shows the medications most patients are allergic to <br><br></span></BR>
+	
+	<span class="style2"><b>TESTS</span><input type="checkbox" name="Tests" value="Tests"/>
+	<BR> <span class="style1"> Shows the  test results which may include images/scans of a specific patient.<br><br></span></BR>
+	
+	<span class="style2"><b>INSERT FORM</span><input type="checkbox" name="Intern" value="Intern"/>
+	<BR> <span class="style1"> Insert a diagnosis<br><br></span></BR>
+	
+	<span class="style2"><b>UPDATE FORM</span><input type="checkbox" name="Intern" value="Intern"/>
+	<BR> <span class="style1"> <b>Update a patient's diagnosis<br><br></span></BR>
+	
+	<a href = "Insert Diagnosis.html"> <b>Insert Diagnosis</a>
+	
+	<a href = "Update Diagnosis.html"> <b>Update Diagnosis</a>
+	</b>
+</html>	
+
+	

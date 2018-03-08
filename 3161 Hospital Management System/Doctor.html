@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC ".//w3c//dtd html 4.01 Transitional//EN" "http://www.w3.org/tr/html4/loose.dtd">
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<i class="fa fa-ambulance" style="font-size:48px;color:red"></i>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Video Game Database</title>
+<style type="text/css">
+.style1 {
+	font-family:Tahoma;
+	color:black;
+}
+.style2 { 
+	font-family: Tahoma;
+	font-weighr: bold;
+	color:black;
+}
+.style3{
+	font-family: Tahoma;
+	text-decoration: underline;
+	color:black;
+}
+</style>
+</head>
+<body background ="hospital3.jpeg">
+
+<FORM action="/HospitalDatabase.oracleServelet" method="GET">
+<h1 class="style3"> <center> PLACID MEMORIAL HOSPITAL </center></h1>
+	<br/>
+	<br/>
+	
+	<form action="/action_page.php">
+	<span class="style1">
+	<b>Diagnosis: </b> <input type="text" name="Diagnosis"><br>
+	<b>Date Range: </b> <input type="date" name="Date Range"><br>
+	<input type="submit" value="Submit">
+	<br><br></span></BR>
+	</form>
+	
+	
+	<span class="style2"><b>ALLERGIES </b></span><input type="checkbox" name="Allergies" value="Allergies"/>
+	<BR> <span class="style1"><b> Shows allergies of a specific patient </b><br><br></span></BR>
+
+	<span class="style2"><b>MEDICATION </b></span><input type="checkbox" name="Medication" value="Medication"/>
+	<BR> <span class="style1"><b> Shows the medications most patients are allergic to </b><br><br></span></BR>
+	
+	<span class="style2"><b>TESTS</b></span><input type="checkbox" name="Tests" value="Tests"/>
+	<BR> <span class="style1"><b> Shows the  test results which may include images/scans of a specific patient.</b><br><br></span></BR>
+	
+	<span class="style2"><b>NURSES</b></span><input type="checkbox" name="Nurses" value="Nurses"/>
+	<BR> <span class="style1"><b> Shows the nurses who administered medication to a specific patient at a specified date. </b><br><br></span></BR>
+	
+	<span class="style2"><b>INTERN</b></span><input type="checkbox" name="Intern" value="Intern"/>
+	<BR> <span class="style1"><b> Shows the intern who treated the most patients.</b><br><br></span></BR>
+	
+	<center> <a href = "Insert Diagnosis.html"><b> Insert Diagnosis</b></a>
+	
+	<a href = "Update Diagnosis.html"><b> Update Diagnosis</b></a> </center>
+	
+	<input type="button" value="Click Me" style="float: right;">
+	
+</body>	
+</html>
+	
+	
+
+	
